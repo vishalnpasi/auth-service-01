@@ -12,6 +12,5 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class UserProfile {
 
     String id;
-    String username;
     String password;
 }
