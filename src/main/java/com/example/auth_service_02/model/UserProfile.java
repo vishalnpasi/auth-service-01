@@ -3,6 +3,7 @@ package com.example.auth_service_02.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
@@ -10,7 +11,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @Document(collection = "userProfile")
 public class UserProfile {
-
+    @Id
     String id;
+    String username;
     String password;
 }
